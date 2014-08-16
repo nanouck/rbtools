@@ -649,7 +649,7 @@ class SVNRepositoryInfo(RepositoryInfo):
         repositories use the same path, you'll get back self, otherwise you'll
         get a different SVNRepositoryInfo object (with a different path).
         """
-        # Reduce list of repositories to only SVN ones
+        # Reduce list of repositories to only SVN ones.
         repositories = []
         page_repositories = server.get_repositories()
         try:

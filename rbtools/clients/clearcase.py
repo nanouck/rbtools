@@ -541,8 +541,8 @@ class ClearCaseRepositoryInfo(RepositoryInfo):
         # have a matching vobstag.
         repository_scan_order = []
 
-        # Go through each matching repo and prompt for a selection. If a
-        # selection is made, immediately return the selected repo.
+        # Reduce list of repositories to only ClearCase ones and sort them 
+        # by repo name matching vobstag first.
         try:
             while True:
                 for repository in repositories:
